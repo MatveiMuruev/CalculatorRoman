@@ -83,7 +83,8 @@ public class Main {
         } else {
 
             int[] index = {Integer.parseInt(output.substring(0, output.length() - 1)), Integer.parseInt(output.substring(output.length() - 1))};
-            output = arrty[index[0] - 1] + arr[index[1] - 1];
+
+            output = index[1]==0? arrty[index[0] - 1]: arrty[index[0] - 1] + arr[index[1] - 1];
         }
         return output;
     }
